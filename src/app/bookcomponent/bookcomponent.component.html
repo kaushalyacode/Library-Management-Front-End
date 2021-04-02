@@ -1,0 +1,20 @@
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">ISBN</th>
+      <th scope="col">TITLE</th>
+      <th scope="col">AVAILABLE QTY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let books of Books">
+      <th scope="row">{{books.id}}</th>
+      <td>{{books.isbn}} </td>
+      <td>{{books.title}}</td>
+      <td>{{books.availableQty}}</td>
+    </tr>
+   
+  
+  </tbody>
+</table>
